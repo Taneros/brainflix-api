@@ -16,7 +16,11 @@ app.use( "/videos", videos );
 app.use("/register", register )
 
 app.get("/", (req, res) => {
-  res.send("Main Path /");
+  res.send( "Main Path /" );
+  
+  // check if uuid is valid and it exists in registration json
+  // copy
+
 } );
 
 app.listen(port, () => {
