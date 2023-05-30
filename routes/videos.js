@@ -21,7 +21,6 @@ router.use( ( req, res, next ) => {
   registeredUser = req.query.api_key
 
   if (isRegistered && usersDB.users.includes(req.query.api_key)) {
-    
     console.log(`videos.js - line: 18 ->> is registered`, )
     next()
 
@@ -45,7 +44,11 @@ router.route("/").post((req, res) => {
 
 // route /videos/:id
 router.route( "/:id" ).get( ( req, res ) => {
-  res.send(`GET /videos/${req.params.id}`);
+  const videos = require( '../data/videos.json' )
+  const findVideo = videos[registeredUser].find(video => video.id === req.params.id)
+  
+  res.status(200).json(findVideo)
+  // res.send( `GET /videos/${ req.params.id }` );
 });
 
 module.exports = router;

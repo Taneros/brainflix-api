@@ -6,6 +6,6 @@ router.use( ( req, res, next ) => {
   next()
 })
 
-router.post( '/', handleNewRegistration )
+router.get( '/', handleNewRegistration )
 
 module.exports = router
