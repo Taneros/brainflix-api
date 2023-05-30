@@ -29,4 +29,4 @@ const handleNewRegistration = async ( req, res ) => {
 }
 
 
-module.exports = {handleNewRegistration}
+module.exports = {handleNewRegistration, usersDB}

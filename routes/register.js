@@ -1,6 +1,6 @@
 const express = require( 'express' )
+const router = express.Router()                    
 const {handleNewRegistration} = require( '../controllers/registerController' )
-const router = express.Router()
 
 router.use( ( req, res, next ) => {
   next()

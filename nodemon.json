@@ -2,6 +2,6 @@
   "watch": ["**/**/*", "index.js"],
   "pollingInterval": 500,
   "ext": "js,json",
-  "ignore": ["node_modules"],
+  "ignore": ["node_modules", ".git"],
   "legacyWatch": true
 }
