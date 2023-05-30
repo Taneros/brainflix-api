@@ -1,8 +1,13 @@
 const express = require("express");
 const router = express.Router();
 
-
 router.use( ( req, res, next ) => {
+  
+  //TODO 
+  /**
+    * check if api_key is correct and is in the list
+    **/
+  
   next()
 })
 
