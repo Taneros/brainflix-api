@@ -1,0 +1,7 @@
+{
+  "watch": ["routes/**/*", "index.js"],
+  "pollingInterval": 500,
+  "ext": "js,json",
+  "ignore": ["node_modules"],
+  "legacyWatch": true
+}
