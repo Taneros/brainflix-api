@@ -1,5 +1,5 @@
 {
-  "watch": ["routes/**/*", "index.js"],
+  "watch": ["**/**/*", "index.js"],
   "pollingInterval": 500,
   "ext": "js,json",
   "ignore": ["node_modules"],
